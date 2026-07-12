@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO мета-теги -->
+    <!-- Было -->
+
+    <!-- Станет -->
+    <title>Репетитор английского и русского в Челябинске | Онлайн и очно | Елена</title>
+    <meta name="description" content="Репетитор английского и русского языка в Челябинске для 1-9 классов. Подготовка к ОГЭ, ВПР. Онлайн и очно. Пробный урок 30 мин бесплатно! 📞 +7 (951) 113-16-19">
+    <meta name="keywords" content="репетитор английского Челябинск, репетитор русского языка Челябинск, английский для школьников, подготовка к ОГЭ, репетитор онлайн Челябинск">
+    <meta name="author" content="Елена">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Репетитор английского и русского в Челябинске | Елена">
+    <meta property="og:description" content="Индивидуальные занятия для школьников 1-9 классов. Пробный урок бесплатно!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://QQontrast.github.io/tutor-elena">
+    <meta property="og:image" content="https://QQontrast.github.io/tutor-elena/elena.png">
+    
+    <!-- Favicon (иконка вкладки) -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .btn-primary { transition: all 0.3s ease; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3); }
+        
+        /* Hover эффекты для карточек */
+        .card-hover { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        .card-hover:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Hover для ценовых карточек */
+        .price-card {
+            transition: all 0.3s ease;
+        }
+        .price-card:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Анимация стрелки */
+        .scroll-arrow {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(10px);
+            }
+            60% {
+                transform: translateY(5px);
+            }
+        }
+        
+        /* Timeline для урока */
+        .timeline-step {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .timeline-step::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #059669, #10b981);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .timeline-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 2.5rem;
+            width: 2px;
+            height: calc(100% - 1rem);
+            background: #d1d5db;
+        }
+        html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* На всякий случай — для всех блочных контейнеров */
+section, .container, .wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+        
+        /* Плавная прокрутка */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-800 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-4xl text-center z-10 mb-12" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block py-3 px-9 rounded-full bg-orange-500/20 text-orange-300 text-sm font-semibold mb-6 border border-orange-500/30">🎁 Пробный урок — 30 минут бесплатно</span>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">Tutor <span class="text-emerald-300">Елена</span></h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-slate-300 mb-4 font-light">Английский и русский языки</p>
+            <p class="text-base sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto px-2">Убираю страх говорить • Объясняю без скучных правил • Отчёт родителям после каждого урока</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
+                <a href="https://t.me/elenashdt" class="btn-primary inline-block bg-[#229ED9] text-white font-bold py-3 sm:py-4 px-6 sm:px-10 rounded-full text-base sm:text-lg flex items-center justify-center gap-2">
+                    <span><img src="Telegram_2019_Logo.svg " alt="telegram" class="w-10"></span> Telegram
+                </a>
+                <a href="https://wa.me/79511131619" class="btn-primary inline-block bg-[#25D366] text-white font-bold py-3 sm:py-4 px-6 sm:px-10 rounded-full text-base sm:text-lg flex items-center justify-center gap-2">
+                    <span><img src="WhatsApp.svg" alt="whatsapp" class="w-10"></span> WhatsApp
+                </a>
+                <a href="https://vk.com/yelenashdt" class="btn-primary inline-block bg-[#4C75A3] text-white font-bold py-3 sm:py-4 px-6 sm:px-10 rounded-full text-base sm:text-lg flex items-center justify-center gap-2">
+                    <span><img src="VK.com-logo.svg" alt="vk" class="w-10"></span> ВКонтакте
+                </a>
+            </div>
+        </div>
+        
+        <!-- Стрелка вниз -->
+        <div class="absolute bottom-8 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-10">
+            <a href="#audience" class="scroll-arrow block w-10 h-10 sm:w-12 sm:h-12 text-white/50 hover:text-white/80 transition-colors duration-300" aria-label="Прокрутить вниз">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+        
+        <!-- Декоративные элементы -->
+        <div class="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+    </header>
+
+    <!-- Целевая аудитория -->
+        <!-- Целевая аудитория -->
+    <section id="audience" class="py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4" data-aos="fade-up">Для кого я работаю</h2>
+        <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Специализируюсь на работе со школьниками от 1 до 9 класса. Индивидуальный подход к каждому возрасту и каждому языку!</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Начальная школа -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-blue-100 card-hover" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="text-5xl">🎒</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800">1-4 классы</h3>
+                        <p class="text-slate-600 text-sm">Начальная школа</p>
+                    </div>
+                </div>
+
+                <!-- Английский -->
+                <div class="mt-5 mb-4">
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-blue-200">
+                        
+                        <h4 class="font-bold text-indigo-700 text-sm uppercase tracking-wide">Английский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Игровой формат обучения</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Снятие страха перед языком</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Постановка произношения</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Первые слова и фразы</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Русский -->
+                <div>
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-red-200">
+                        
+                        <h4 class="font-bold text-red-700 text-sm uppercase tracking-wide">Русский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Постановка грамотного письма</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Развитие техники чтения</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Красивый почерк и списывание</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Любовь к русскому слову</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Средняя школа -->
+            <div class="bg-gradient-to-br from-emerald-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-emerald-100 card-hover" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="text-5xl">📚</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-800">5-7 классы</h3>
+                        <p class="text-slate-600 text-sm">Средняя школа</p>
+                    </div>
+                </div>
+
+                <!-- Английский -->
+                <div class="mt-5 mb-4">
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-emerald-200">
+                        
+                        <h4 class="font-bold text-indigo-700 text-sm uppercase tracking-wide">Английский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Времена и грамматика без зубрёжки</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Расширение словарного запаса</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Развитие навыков говорения</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Подготовка к контрольным и ВПР</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Русский -->
+                <div>
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-red-200">
+                        
+                        <h4 class="font-bold text-red-700 text-sm uppercase tracking-wide">Русский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Части речи и синтаксис</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Устранение орфографических ошибок</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Развитие письменной речи</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Подготовка к ВПР</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Старшая школа -->
+            <div class="bg-gradient-to-br from-orange-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-orange-100 card-hover" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="text-5xl">🎯</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-orange-800">8-9 классы</h3>
+                        <p class="text-slate-600 text-sm">Старшая школа</p>
+                    </div>
+                </div>
+
+                <!-- Английский -->
+                <div class="mt-5 mb-4">
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-orange-200">
+                        
+                        <h4 class="font-bold text-indigo-700 text-sm uppercase tracking-wide">Английский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Целенаправленная подготовка к ОГЭ</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Аудирование и чтение</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Разговорная практика</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">✓</span>
+                            <span>Устранение пробелов прошлых лет</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Русский -->
+                <div>
+                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-red-200">
+                        
+                        <h4 class="font-bold text-red-700 text-sm uppercase tracking-wide">Русский язык</h4>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Подготовка к ОГЭ</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Сочинения</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Систематизация всех правил</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500 mt-1">✓</span>
+                            <span>Повышение школьной успеваемости</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Преимущества -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">Почему выбирают меня</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-slate-100 card-hover cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-4xl mb-4">💬</div>
+                <h3 class="text-xl font-bold mb-3">Убираю страх говорить</h3>
+                <p class="text-slate-600 text-sm sm:text-base">Создаю комфортную атмосферу, где не страшно ошибаться.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-slate-100 card-hover cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-xl font-bold mb-3">Без скучных правил</h3>
+                <p class="text-slate-600 text-sm sm:text-base">Объясняю сложное простым языком. Никакой зубрёжки — только понимание и практика.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-slate-100 card-hover cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-4xl mb-4">📋</div>
+                <h3 class="text-xl font-bold mb-3">Отчёт родителям</h3>
+                <p class="text-slate-600 text-sm sm:text-base">После каждого урока вы получаете подробный отчёт о прогрессе и домашних заданиях.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как проходит урок -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 bg-emerald-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4" data-aos="fade-up">Как проходят занятия</h2>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Каждый урок продуман до мелочей. Индивидуальная программа и авторские материалы!</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+                <!-- Первый урок -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-right">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">1</div>
+                        <h3 class="text-2xl font-bold text-emerald-800">Первый урок</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="timeline-step">
+                            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                <h4 class="font-bold text-blue-800 mb-2 flex items-center gap-2">
+                                    <span class="text-xl">📝</span> Тестирование
+                                </h4>
+                                <p class="text-slate-600 text-sm">Определяю текущий уровень знаний, сильные и слабые стороны ученика</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="bg-purple-50 p-4 rounded-xl border border-purple-100">
+                                <h4 class="font-bold text-purple-800 mb-2 flex items-center gap-2">
+                                    <span class="text-xl">🎯</span> Индивидуальный план
+                                </h4>
+                                <p class="text-slate-600 text-sm">Составляю персональную программу обучения с учётом целей и темпа</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                                <h4 class="font-bold text-orange-800 mb-2 flex items-center gap-2">
+                                    <span class="text-xl">📖</span> Авторские материалы
+                                </h4>
+                                <p class="text-slate-600 text-sm">Каждый ребёнок получает уникальные методические материалы, разработанные мной лично</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-emerald-50 rounded-xl border-l-4 border-emerald-500">
+                        <p class="text-emerald-800 font-semibold text-sm">✨ Результат: полная картина уровня знаний и чёткий план развития!</p>
+                    </div>
+                </div>
+
+                <!-- Последующие уроки -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg card-hover" data-aos="fade-left">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">2</div>
+                        <h3 class="text-2xl font-bold text-orange-800">Последующие уроки</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="timeline-step">
+                            <div class="bg-green-50 p-4 rounded-xl border border-green-100">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-bold text-green-800 flex items-center gap-2">
+                                        <span class="text-xl">💬</span> Разговорная практика
+                                    </h4>
+                                    <span class="text-xs font-bold text-green-600 bg-green-100 px-2 py-1 rounded-full">15 мин</span>
+                                </div>
+                                <p class="text-slate-600 text-sm">Small talk, проверка домашнего задания, обсуждение интересных тем</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-bold text-yellow-800 flex items-center gap-2">
+                                        <span class="text-xl">🔄</span> Повторение
+                                    </h4>
+                                    <span class="text-xs font-bold text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full">10 мин</span>
+                                </div>
+                                <p class="text-slate-600 text-sm">Закрепление пройденного материала, работа над ошибками</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-bold text-red-800 flex items-center gap-2">
+                                        <span class="text-xl">🚀</span> Новая тема
+                                    </h4>
+                                    <span class="text-xs font-bold text-red-600 bg-red-100 px-2 py-1 rounded-full">35 мин</span>
+                                </div>
+                                <p class="text-slate-600 text-sm">Изучение нового материала по индивидуальному плану с практикой и играми</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-orange-50 rounded-xl border-l-4 border-orange-500">
+                        <p class="text-orange-800 font-semibold text-sm">⏱️ Длительность урока: 60 минут</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Отзывы -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-emerald-800 to-slate-900 text-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4" data-aos="fade-up">Отзывы учеников и родителей</h2>
+        <p class="text-center text-slate-300 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Реальные истории успеха тех, кто уже учится со мной</p>
+
+        <!-- Карусель отзывов -->
+        <div class="relative max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative overflow-hidden">
+                <!-- Контейнер слайдов с фиксированной высотой для выравнивания -->
+                <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+                    <div class="carousel-slide w-full flex-shrink-0 flex items-center justify-center min-h-[400px] sm:min-h-[500px]">
+                        <img src="отзыв1.png" alt="Отзыв 1" class="max-w-full max-h-[500px] sm:max-h-[600px] w-auto h-auto mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0 flex items-center justify-center min-h-[400px] sm:min-h-[500px]">
+                        <img src="отзыв2.png" alt="Отзыв 2" class="max-w-full max-h-[500px] sm:max-h-[600px] w-auto h-auto mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0 flex items-center justify-center min-h-[400px] sm:min-h-[500px]">
+                        <img src="отзыв3.png" alt="Отзыв 3" class="max-w-full max-h-[500px] sm:max-h-[600px] w-auto h-auto mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0 flex items-center justify-center min-h-[400px] sm:min-h-[500px]">
+                        <img src="отзыв4.png" alt="Отзыв 4" class="max-w-full max-h-[500px] sm:max-h-[600px] w-auto h-auto mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0 flex items-center justify-center min-h-[400px] sm:min-h-[500px]">
+                        <img src="отзыв5.png" alt="Отзыв 5" class="max-w-full max-h-[500px] sm:max-h-[600px] w-auto h-auto mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+
+                <!-- Стрелка влево -->
+                <button id="prevBtn" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 hover:bg-white text-emerald-800 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 z-10" aria-label="Предыдущий отзыв">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+
+                <!-- Стрелка вправо -->
+                <button id="nextBtn" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 hover:bg-white text-emerald-800 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 z-10" aria-label="Следующий отзыв">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Точки-индикаторы -->
+            <div class="flex justify-center gap-3 mt-6" id="carouselDots">
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" data-index="0" aria-label="Отзыв 1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" data-index="1" aria-label="Отзыв 2"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" data-index="2" aria-label="Отзыв 3"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" data-index="3" aria-label="Отзыв 4"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" data-index="4" aria-label="Отзыв 5"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    const track = document.getElementById('carouselTrack');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const totalSlides = slides.length;
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-white', i === currentIndex);
+            dot.classList.toggle('scale-125', i === currentIndex);
+            dot.classList.toggle('bg-white/40', i !== currentIndex);
+        });
+    }
+
+    function goToSlide(index) {
+        currentIndex = (index + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+
+    
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            goToSlide(parseInt(dot.dataset.index));
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    });
+
+    const carouselContainer = track.closest('.relative.max-w-4xl');
+    carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+    carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoPlay();
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) nextSlide();
+            else prevSlide();
+        }
+        startAutoPlay();
+    }, { passive: true });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+    });
+
+    updateCarousel();
+    startAutoPlay();
+})();
+</script>
+
+    <!-- Обо мне и образование -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">Обо мне</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12">
+                <!-- Фото Елены -->
+                <div class="relative" data-aos="fade-right">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-400 to-blue-500 rounded-3xl transform rotate-3 opacity-20"></div>
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl">
+                        <img src="elena.png" alt="Елена - репетитор" class="w-full h-auto rounded-2xl">
+                    </div>
+                </div>
+
+                <div class="space-y-6" data-aos="fade-left">
+                    <!-- Образование -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg card-hover border border-slate-100">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h3 class="text-2xl font-bold mb-4 text-emerald-800">Образование</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-emerald-500 pl-4">
+                                <p class="font-bold text-lg text-slate-800">ЧелГУ</p>
+                                <p class="text-emerald-700 font-semibold">Челябинский государственный университет</p>
+                                <p class="text-slate-600 mt-2">Высшее образование по направлению:</p>
+                                <p class="text-slate-800 font-medium">«Лингвистика и перевод»</p>
+                            </div>
+                            <p class="text-slate-600 text-sm sm:text-base mt-4">
+                                Профессиональная подготовка в области лингвистики позволяет мне глубоко понимать структуру языка и объяснять даже самые сложные темы простым и доступным языком.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Формат занятий -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg card-hover border border-slate-100">
+                        <div class="text-4xl mb-4">🏙️</div>
+                        <h3 class="text-2xl font-bold mb-4 text-emerald-800">Формат занятий</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4 p-4 bg-blue-50 rounded-xl">
+                                <div class="text-3xl">💻</div>
+                                <div>
+                                    <p class="font-bold text-slate-800">Онлайн занятия</p>
+                                    <p class="text-slate-600 text-sm mb-2">Из любой точки мира через Яндекс Телемост</p>
+                                    <div class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-2 rounded-lg inline-block">
+                                        ✨ Не нужно скачивать — просто зайдите в браузер! Удобно и быстро.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 bg-orange-50 rounded-xl border-2 border-orange-200">
+                                <div class="text-3xl">📍</div>
+                                <div>
+                                    <p class="font-bold text-slate-800">Очные занятия</p>
+                                    <p class="text-slate-600 text-sm">Возможны личные встречи в Челябинске</p>
+                                    <p class="text-orange-600 text-xs font-semibold mt-1">г. Челябинск</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Расписание и цены -->
+<!-- Расписание и цены -->
+<section class="py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">Расписание и стоимость</h2>
+    
+    <!-- Блок расписания (сверху, на всю ширину) -->
+    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-slate-100 card-hover mb-8 sm:mb-12 max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+            <div class="text-4xl">📅</div>
+            <div class="flex-1 w-full">
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 text-emerald-800">Расписание занятий</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 rounded-xl p-4">
+                        <p class="text-xs uppercase tracking-wide text-slate-500 mb-1">Дни недели</p>
+                        <p class="font-semibold text-slate-800">Пн — Вс</p>
+                        <p class="text-sm text-slate-500">(кроме субботы)</p>
+                    </div>
+                    <div class="bg-emerald-50 rounded-xl p-4">
+                        <p class="text-xs uppercase tracking-wide text-emerald-600 mb-1">Время работы</p>
+                        <p class="font-bold text-lg text-emerald-800">10:00 — 22:00</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl p-4">
+                        <p class="text-xs uppercase tracking-wide text-slate-500 mb-1">Пробный урок</p>
+                        <p class="font-semibold text-slate-800">30 минут</p>
+                        <p class="text-sm text-slate-500">бесплатно</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Две карточки с ценами (горизонтально) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <!-- Английский язык -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-orange-100 card-hover" data-aos="fade-right">
+            <div class="flex items-center gap-3 mb-6">
+                
+                <h3 class="text-xl sm:text-2xl font-bold text-orange-700">Английский язык</h3>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Повышение успеваемости</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-orange-600">1 000₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Подготовка к ОГЭ</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-orange-600">1 500₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Повышение уровня (взрослые)</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-orange-600">1 300₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Подготовка дошкольников</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-orange-600">900₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-orange-50 rounded-lg border border-orange-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Подготовка к экзамену в вузе</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-orange-600">1 400₽</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Русский язык -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-emerald-100 card-hover" data-aos="fade-left">
+            <div class="flex items-center gap-3 mb-6">
+                
+                <h3 class="text-xl sm:text-2xl font-bold text-emerald-700">Русский язык</h3>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Повышение успеваемости</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-emerald-600">900₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Итоговое сочинение 11 кл</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-emerald-600">1 100₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Подготовка к ОГЭ</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-emerald-600">1 200₽</div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                    <div>
+                        <p class="font-semibold text-sm text-slate-800">Подготовка дошкольников</p>
+                        <p class="text-xs text-slate-500">1 ч</p>
+                    </div>
+                    <div class="text-lg font-bold text-emerald-600">700₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-emerald-800 to-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Начните учиться уже сегодня!</h2>
+            <p class="text-lg sm:text-xl text-slate-300 mb-8 px-2">Запишитесь на бесплатный пробный урок и убедитесь сами, что изучать языки — это легко и интересно!</p>
+            <div class="flex flex-col items-center gap-4">
+                <p class="text-base sm:text-lg font-semibold text-emeАrald-300">Контакты для связи:</p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="https://t.me/elenashdt" class="btn-primary inline-flex items-center justify-center gap-2 bg-[#229ED9] text-white font-bold py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base">
+                        <span><img src="Telegram_2019_Logo.svg" alt="telegram" class="w-10"></span> Telegram: @elenashdt
+                    </a>
+                    <a href="https://wa.me/79511131619"  class="btn-primary inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base">
+                        <span><img src="WhatsApp.svg" alt="whatsapp"class="w-10"></span> WhatsApp
+                    </a>
+                    <a href="https://vk.com/yelenashdt"  class="btn-primary inline-flex items-center justify-center gap-2 bg-[#4C75A3] text-white font-bold py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base">
+                        <span><img src="VK.com-logo.svg" alt="vk"class="w-10"></span> ВКонтакте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 sm:py-12 px-4 sm:px-6 bg-slate-900 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">Tutor Елена</h3>
+            <p class="text-slate-400 mb-4 text-sm sm:text-base">Английский и русский языки</p>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center mb-6 text-sm sm:text-base">
+                <a href="https://t.me/elenashdt" class="text-[#229ED9] hover:underline">@elenashdt</a>
+                <span class="text-slate-600 hidden sm:inline">•</span>
+                <a href="https://vk.com/yelenashdt" class="text-[#4C75A3] hover:underline">vk.com/yelenashdt</a>
+                <span class="text-slate-600 hidden sm:inline">•</span>
+                <a href="tel:+79511131619" class="text-slate-300 hover:underline">+7 (951) 113-16-19</a>
+            </div>
+            <p class="text-slate-100 text-xs sm:text-sm">© 2026 pominovvladimir074@gmail.com разработка лендинговых сайтов</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+    </script>
+    <!-- Микроразметка Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Елена",
+      "jobTitle": "Репетитор английского и русского языка",
+      "description": "Репетитор английского и русского языка для школьников 1-9 классов в Челябинске. Подготовка к ОГЭ и ВПР.",
+      "url": "https://QQontrast.github.io/tutor-elena",
+      "telephone": "+79511131619",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Челябинск",
+        "addressRegion": "Челябинская область",
+        "addressCountry": "RU"
+      },
+      "sameAs": [
+        "https://vk.com/yelenashdt",
+        "https://t.me/elenashdt"
+      ],
+      "knowsAbout": ["Английский язык", "Русский язык", "Подготовка к ОГЭ", "Подготовка к ВПР"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги репетитора",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Английский язык - повышение успеваемости"
+            },
+            "price": "1000",
+            "priceCurrency": "RUB",
+            "unitCode": "HUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Английский язык - подготовка к ОГЭ"
+            },
+            "price": "1500",
+            "priceCurrency": "RUB",
+            "unitCode": "HUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Русский язык - повышение успеваемости"
+            },
+            "price": "900",
+            "priceCurrency": "RUB",
+            "unitCode": "HUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Русский язык - подготовка к ОГЭ"
+            },
+            "price": "1200",
+            "priceCurrency": "RUB",
+            "unitCode": "HUR"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Репетитор Елена - английский и русский язык",
+      "description": "Индивидуальные занятия для школьников 1-9 классов в Челябинске",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Челябинск",
+        "addressCountry": "RU"
+      },
+      "telephone": "+79511131619",
+      "openingHours": "Mo-Su 10:00-22:00",
+      "priceRange": "700₽ - 1500₽",
+      "sameAs": [
+        "https://vk.com/yelenashdt",
+        "https://t.me/elenashdt"
+      ]
+    }
+  ]
+}
+</script>
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin
+
+Sitemap:    https://QQontrast.github.io/tutor-elena/sitemap.xml
